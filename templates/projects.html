@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Projects{% endblock title %}
+{% block projectsactive %}active{% endblock projectsactive %}
+
+{% block body %}
+    <div class="container my-3 text-center">
+        <h2 class="py-3">My Personal Projects</h2>   
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static '/img/project1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Portfolio </h5>
+                        <p class="card-text">Portfolio using HTML, CSS, JavaScript, Bootstrap, Django</p>
+                        <a href="https://github.com/DivyaKampalli/Portfolio" class="btn btn-primary">Github Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">        
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static '/img/project2.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Real Estate Price Prediction</h5>
+                        <p class="card-text">Machine Learning model which predicts price of houses using Simple Linear Regression</p>
+                        <a href="https://github.com/DivyaKampalli/Real-Estate-House-Price-Prediction" class="btn btn-primary">Github Link</a>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static '/img/project3.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <h5 class="card-title">TODO App </h5>
+                        <p class="card-text">A simple TODO App using Django, SQLite, HTML, CSS and Bootstrap</p>
+                        <a href="https://github.com/DivyaKampalli/TODO-list-App" class="btn btn-primary">Github Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+{% endblock body %}

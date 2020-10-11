@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block aboutactive %}active{% endblock aboutactive %}
+
+{% block body %}
+<div class="container text-center ">
+    	<h1 class="heading mt-4" style="color:#e88873;">Hi!!! I am Divya Kampalli</h1>
+      <br>
+      <h2 style="color:#011627;">Web Developer || Foodie || Bibliophile</h2>	
+    	<img src="{% static 'img/myimage2.jpg' %}" class="img-fluid" alt="My Photo" style="width:310px;height:400px;">
+      <h3 style="color:#602437;">Logically minded || Creative at heart</h3><br>
+      <h5 style="color:#1d3557;">Get a deeper insight into who I am as a person. My path as Web Developer started from building small web pages using simple HTML and CSS to building professional full fledged website with the help of Django.</h5><br>
+      <div style="color:#3d405b;">
+        <p>During the lockdown I started with Data Science. Later I understood it is not my cup of tea. Later started learning Web Development.</p>
+        <p>When I am in my first year of Engineering, I did not know what web development is. I just concentrated on my studies. At the end of my third year, due to corona virus, I got so much of free time. At first, I wasted my time by binge watching netflix. Later I realised and invested my time to learn web development and now I am here learnt wev development and built a complete website. Bottom line: I honestly love what I do and I will do whatever it takes to further my career.</p>
+      </div>
+      <p style="color:#006d77;">You can contact me on Linkedin if you have any queries.</p>
+    </div>
+
+
+{% endblock body %}
